@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Teacher {
+    private:
+    double salary;
+ public:
+ //non P
+/* Teacher(){
+     dept="CS";
+ }*/
+ //P
+ 
+ Teacher(string n, string d, string s, double sal){
+     name = n;
+     dept = d;
+     subject = s;
+     salary = sal;
+ }
+ string name;
+ string dept;
+ string subject;
+
+ void getInfo(){
+     cout<<"name:"<<name<<endl;
+     cout<<"dept:"<<dept<<endl;
+ }
+};
+int main() {
+    Teacher t1("utkrisht", "CSE", "C++", 25000);
+t1.getInfo();
+    return 0;
+}
